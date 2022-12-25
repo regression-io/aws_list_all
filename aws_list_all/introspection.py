@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 import re
 from collections import defaultdict
 from json import load, dump
@@ -11,7 +9,7 @@ from pkg_resources import resource_stream, resource_filename
 
 from app_json_file_cache import AppCache
 
-from .client import get_client
+from client import get_client
 
 cache = AppCache('aws_list_all')
 
@@ -556,7 +554,9 @@ def get_service_region_ip_in_dns():
 
 
 def packaged_service_regions():
-    return load(resource_stream(__package__, 'service_regions.json'))
+    with open('../service_regions.json', 'r') as f:
+        return load(f)
+    # return load(resource_stream(__package__, 'service_regions.json'))
 
 
 @cache('service_regions', vary={'boto3_version': boto3.__version__}, cheap_default_func=packaged_service_regions)

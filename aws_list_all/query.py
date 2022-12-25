@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 import json
 import sys
 import contextlib
@@ -7,17 +5,18 @@ from collections import defaultdict
 from datetime import datetime
 from functools import partial
 from multiprocessing.pool import ThreadPool
+from os.path import exists
 from random import shuffle
 from time import time
 from traceback import print_exc
 
-from .introspection import get_listing_operations, get_regions_for_service
-from .listing import Listing
+from introspection import get_listing_operations, get_regions_for_service
+from listing import Listing
 
-RESULT_NOTHING = '---'
-RESULT_SOMETHING = '+++'
-RESULT_ERROR = '!!!'
-RESULT_NO_ACCESS = '>:|'
+RESULT_NOTHING = 'NOTHING'
+RESULT_SOMETHING = 'SOMETHING'
+RESULT_ERROR = 'ERROR'
+RESULT_NO_ACCESS = 'NO_ACCESS'
 
 # List of requests with legitimate, persistent errors that indicate that no listable resources are present.
 #
@@ -314,30 +313,33 @@ def do_query(services, selected_regions=(), selected_operations=(), verbose=0, p
     (default: all)"""
     to_run = []
     print('Building set of queries to execute...')
-    for service in services:
-        for region in get_regions_for_service(service, selected_regions):
-            for operation in get_listing_operations(service, region, selected_operations, selected_profile):
-                if verbose > 0:
-                    region_name = region or 'n/a'
-                    print('Service: {: <28} | Region: {:<15} | Operation: {}'.format(service, region_name, operation))
+    if exists('../to_run.json'):
+        with open('../to_run.json') as f:
+            to_run = json.load(f)
+    else:
+        for service in services:
+            for region in get_regions_for_service(service, selected_regions):
+                for operation in get_listing_operations(service, region, selected_operations, selected_profile):
+                    if verbose > 0:
+                        region_name = region or 'n/a'
+                        print('Service: {: <28} | Region: {:<15} | Operation: {}'.format(service, region_name, operation))
 
-                to_run.append([service, region, operation, selected_profile])
+                    to_run.append([service, region, operation, selected_profile])
     shuffle(to_run)  # Distribute requests across endpoints
     results_by_type = defaultdict(list)
     print('...done. Executing queries...')
     # the `with` block is a workaround for a bug: https://bugs.python.org/issue35629
     with contextlib.closing(ThreadPool(parallel)) as pool:
         for result in pool.imap_unordered(partial(acquire_listing, verbose), to_run):
-            results_by_type[result[0]].append(result)
-            if verbose > 1:
-                print('ExecutedQueryResult: {}'.format(result))
-            else:
-                print(result[0][-1], end='')
-                sys.stdout.flush()
+            if result[0] != RESULT_NOTHING:
+                results_by_type[result[0]].append(result)
+                if verbose > 1:
+                    print('ExecutedQueryResult: {}'.format(result))
+                else:
+                    print(result[0][-1], end='')
+                    sys.stdout.flush()
     print('...done')
-    for result_type in (RESULT_NOTHING, RESULT_SOMETHING, RESULT_NO_ACCESS, RESULT_ERROR):
-        for result in sorted(results_by_type[result_type]):
-            print(*result)
+    return results_by_type
 
 
 def acquire_listing(verbose, what):

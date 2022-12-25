@@ -1,15 +1,16 @@
 #!/usr/bin/env python
-from __future__ import print_function
-
+import json
 import os
 from platform import python_version_tuple
 from argparse import ArgumentParser
 from sys import exit, stderr
 
-from .introspection import (
+# from gooey import Gooey
+
+from introspection import (
     get_listing_operations, get_services, get_verbs, introspect_regions_for_service, recreate_caches
 )
-from .query import do_list_files, do_query
+from query import do_list_files, do_query, RESULT_NOTHING, RESULT_SOMETHING, RESULT_NO_ACCESS, RESULT_ERROR
 
 CAN_SET_OPEN_FILE_LIMIT = False
 try:
@@ -50,7 +51,7 @@ def increase_limit_nofiles():
         setrlimit(RLIMIT_NOFILE, (target_soft_limit, hard_limit))
     print("")
 
-
+# @Gooey
 def main():
     """Parse CLI arguments to either list services, operations, queries or existing json files"""
     parser = ArgumentParser(
@@ -160,12 +161,12 @@ def main():
         if args.directory:
             try:
                 os.makedirs(args.directory)
-            except OSError:
+            except OSError as e:
                 pass
             os.chdir(args.directory)
         increase_limit_nofiles()
         services = args.service or get_services()
-        do_query(
+        results_by_type = do_query(
             services,
             args.region,
             args.operation,
@@ -173,6 +174,13 @@ def main():
             parallel=args.parallel,
             selected_profile=args.profile
         )
+        with open('aws_list_all.json', 'w') as f:
+            json.dump(results_by_type, f, indent=2)
+        print("Wrote results to aws_list_all.json")
+        for result_type in (RESULT_NOTHING, RESULT_SOMETHING, RESULT_NO_ACCESS, RESULT_ERROR):
+            result = sorted(results_by_type[result_type])
+            for result in result:
+                print(*result)
     elif args.command == 'show':
         if args.listingfile:
             increase_limit_nofiles()

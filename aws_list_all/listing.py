@@ -2,7 +2,7 @@ import pprint
 
 import boto3
 
-from .client import get_client
+from client import get_client
 
 
 def get_parameters():
