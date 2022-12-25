@@ -13,10 +13,10 @@ from traceback import print_exc
 from introspection import get_listing_operations, get_regions_for_service
 from listing import Listing
 
-RESULT_NOTHING = 'NOTHING'
-RESULT_SOMETHING = 'SOMETHING'
-RESULT_ERROR = 'ERROR'
-RESULT_NO_ACCESS = 'NO_ACCESS'
+RESULT_NOTHING = 'no_results'
+RESULT_SOMETHING = 'results'
+RESULT_ERROR = 'errors'
+RESULT_NO_ACCESS = 'no_access'
 
 # List of requests with legitimate, persistent errors that indicate that no listable resources are present.
 #
@@ -356,11 +356,11 @@ def acquire_listing(verbose, what):
             print(what, '...request successful')
             print("timing [success]:", duration, what)
         if listing.resource_total_count > 0:
-            with open('{}_{}_{}_{}.json'.format(service, operation, region, profile), 'w') as jsonfile:
-                json.dump(listing.to_json(), jsonfile, default=datetime.isoformat)
-            return (RESULT_SOMETHING, service, region, operation, profile, ', '.join(listing.resource_types))
+            with open('{}_{}_{}.json'.format(region, service, operation), 'w') as jsonfile:
+                json.dump(listing.to_json(), jsonfile, default=datetime.isoformat, indent=2)
+            return (RESULT_SOMETHING, service, region, operation, ', '.join(listing.resource_types))
         else:
-            return (RESULT_NOTHING, service, region, operation, profile, ', '.join(listing.resource_types))
+            return (RESULT_NOTHING, service, region, operation, ', '.join(listing.resource_types))
     except Exception as exc:  # pylint:disable=broad-except
         duration = time() - start_time
         if verbose > 1:

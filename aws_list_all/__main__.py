@@ -1,20 +1,21 @@
 #!/usr/bin/env python
 import json
 import os
-from platform import python_version_tuple
 from argparse import ArgumentParser
+from platform import python_version_tuple
 from sys import exit, stderr
-
-# from gooey import Gooey
 
 from introspection import (
     get_listing_operations, get_services, get_verbs, introspect_regions_for_service, recreate_caches
 )
 from query import do_list_files, do_query, RESULT_NOTHING, RESULT_SOMETHING, RESULT_NO_ACCESS, RESULT_ERROR
 
+# from gooey import Gooey
+
 CAN_SET_OPEN_FILE_LIMIT = False
 try:
     from resource import getrlimit, setrlimit, RLIMIT_NOFILE
+
     CAN_SET_OPEN_FILE_LIMIT = True
 except ImportError:
     pass
@@ -51,7 +52,32 @@ def increase_limit_nofiles():
         setrlimit(RLIMIT_NOFILE, (target_soft_limit, hard_limit))
     print("")
 
+
 # @Gooey
+def restructure(data):
+    new_data = {}
+    for data_type in data.keys():
+        new_data[data_type] = {}
+
+    for data_type in data.keys():
+        for item in data[data_type]:
+            service = item[0]
+            region = item[1]
+            operation = item[2]
+            result_types = item[3].split(", ")
+
+            if region not in new_data[data_type]:
+                new_data[data_type][region] = {}
+            if service not in new_data[data_type][region]:
+                new_data[data_type][region][service] = []
+
+            new_data[data_type][region][service].append({
+                "operation": operation,
+                "result_types": result_types
+            })
+    return new_data
+
+
 def main():
     """Parse CLI arguments to either list services, operations, queries or existing json files"""
     parser = ArgumentParser(
@@ -174,6 +200,7 @@ def main():
             parallel=args.parallel,
             selected_profile=args.profile
         )
+        results_by_type = restructure(results_by_type)
         with open('aws_list_all.json', 'w') as f:
             json.dump(results_by_type, f, indent=2)
         print("Wrote results to aws_list_all.json")
