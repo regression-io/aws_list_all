@@ -61,8 +61,8 @@ def restructure(data):
 
     for data_type in data.keys():
         for item in data[data_type]:
-            service = item[0]
-            region = item[1]
+            region = item[0]
+            service = item[1]
             operation = item[2]
             result_types = item[3].split(", ")
 
@@ -201,10 +201,10 @@ def main():
             selected_profile=args.profile
         )
         results_by_type = restructure(results_by_type)
-        with open('aws_list_all.json', 'w') as f:
+        with open('../aws_list_all.json', 'w') as f:
             json.dump(results_by_type, f, indent=2)
         print("Wrote results to aws_list_all.json")
-        for result_type in (RESULT_NOTHING, RESULT_SOMETHING, RESULT_NO_ACCESS, RESULT_ERROR):
+        for result_type in (RESULT_SOMETHING, RESULT_NO_ACCESS, RESULT_ERROR):
             result = sorted(results_by_type[result_type])
             for result in result:
                 print(*result)
