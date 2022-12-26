@@ -1,0 +1,1726 @@
+{
+  "results": {
+    "results": {
+      "apigateway": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetApiKeys"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetDomainNames"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetUsagePlans"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetRestApis"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetClientCertificates"
+          ]
+        }
+      ],
+      "kms": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListKeys"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListAliases"
+          ]
+        }
+      ],
+      "cloudwatch": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListMetrics"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListDashboards"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeAlarms"
+          ]
+        }
+      ],
+      "ec2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeNetworkInterfacePermissions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeTags"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeLaunchTemplates"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeRouteTables"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeInternetGateways"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeInstances"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeVpcEndpoints"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeNatGateways"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeFpgaImages"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeVpcPeeringConnections"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeVolumes"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeTransitGatewayAttachments"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeReplaceRootVolumeTasks"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeVpcs"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeNetworkInsightsPaths"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeNetworkAcls"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeIamInstanceProfileAssociations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeVolumesModifications"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeVolumeStatus"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeInstanceStatus"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeSecurityGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeKeyPairs"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeTransitGateways"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeInstanceCreditSpecifications"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeAddresses"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeNetworkInterfaces"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeSubnets"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeTransitGatewayVpcAttachments"
+          ]
+        }
+      ],
+      "memorydb": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeUsers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeParameterGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeEngineVersions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeACLs"
+          ]
+        }
+      ],
+      "lambda": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListLayers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListEventSourceMappings"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListFunctions"
+          ]
+        }
+      ],
+      "neptune": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusters"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusterEndpoints"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusterSnapshots"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBInstances"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBSubnetGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBParameterGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusterParameterGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribePendingMaintenanceActions"
+          ]
+        }
+      ],
+      "sesv2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListEmailIdentities"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListSuppressedDestinations"
+          ]
+        }
+      ],
+      "ecs": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeCapacityProviders"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListClusters"
+          ]
+        }
+      ],
+      "docdb": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBInstances"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusters"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusterParameterGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribePendingMaintenanceActions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusterSnapshots"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBSubnetGroups"
+          ]
+        }
+      ],
+      "customer-profiles": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListProfileObjectTypeTemplates"
+          ]
+        }
+      ],
+      "codestar-connections": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListConnections"
+          ]
+        }
+      ],
+      "logs": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeResourcePolicies"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeQueryDefinitions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeLogGroups"
+          ]
+        }
+      ],
+      "autoscaling": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeTags"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeAutoScalingInstances"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeAutoScalingGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeLaunchConfigurations"
+          ]
+        }
+      ],
+      "cognito-sync": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListIdentityPoolUsage"
+          ]
+        }
+      ],
+      "scheduler": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListScheduleGroups"
+          ]
+        }
+      ],
+      "compute-optimizer": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetLambdaFunctionRecommendations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetAutoScalingGroupRecommendations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetRecommendationSummaries"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetECSServiceRecommendations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetEC2InstanceRecommendations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetEBSVolumeRecommendations"
+          ]
+        }
+      ],
+      "route53resolver": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListFirewallConfigs"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListFirewallDomainLists"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListResolverConfigs"
+          ]
+        }
+      ],
+      "dynamodb": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTables"
+          ]
+        }
+      ],
+      "iam": [
+        {
+          "operation": null,
+          "result_types": [
+            "ListUsers"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListInstanceProfiles"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListPolicies"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListVirtualMFADevices"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListRoles"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListGroups"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListAccountAliases"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListAccessKeys"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListMFADevices"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListSAMLProviders"
+          ]
+        }
+      ],
+      "lightsail": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetContainerAPIMetadata"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetContainerServicePowers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetBucketBundles"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetLoadBalancerTlsPolicies"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetOperations"
+          ]
+        }
+      ],
+      "glue": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListJobs"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetConnections"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetDatabases"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetSecurityConfigurations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetCrawlerMetrics"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetResourcePolicies"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetJobs"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetCrawlers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListCrawlers"
+          ]
+        }
+      ],
+      "elasticache": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeCacheSubnetGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeUpdateActions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeSnapshots"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeUsers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeReplicationGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeCacheClusters"
+          ]
+        }
+      ],
+      "ssm": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListDocuments"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListCommandInvocations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeParameters"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetInventory"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeInstanceInformation"
+          ]
+        }
+      ],
+      "cloudtrail": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeTrails"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTrails"
+          ]
+        }
+      ],
+      "acm": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListCertificates"
+          ]
+        }
+      ],
+      "mq": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListConfigurations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListBrokers"
+          ]
+        }
+      ],
+      "appconfig": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListExtensions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListDeploymentStrategies"
+          ]
+        }
+      ],
+      "secretsmanager": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListSecrets"
+          ]
+        }
+      ],
+      "appstream": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeImages"
+          ]
+        }
+      ],
+      "inspector": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListFindings"
+          ]
+        }
+      ],
+      "sns": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListSubscriptions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListOriginationNumbers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTopics"
+          ]
+        }
+      ],
+      "iot": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListManagedJobTemplates"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListDomainConfigurations"
+          ]
+        }
+      ],
+      "schemas": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListRegistries"
+          ]
+        }
+      ],
+      "emr": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListReleaseLabels"
+          ]
+        }
+      ],
+      "athena": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListDataCatalogs"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListApplicationDPUSizes"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListEngineVersions"
+          ]
+        }
+      ],
+      "gamesparks": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListExtensions"
+          ]
+        }
+      ],
+      "pinpoint-sms-voice-v2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribePhoneNumbers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeOptOutLists"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeSpendLimits"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeAccountAttributes"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeAccountLimits"
+          ]
+        }
+      ],
+      "migrationhuborchestrator": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTemplates"
+          ]
+        }
+      ],
+      "codebuild": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListProjects"
+          ]
+        }
+      ],
+      "cloudfront": [
+        {
+          "operation": null,
+          "result_types": [
+            "ListOriginRequestPolicies"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListResponseHeadersPolicies"
+          ]
+        }
+      ],
+      "sagemaker": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListModelMetadata"
+          ]
+        }
+      ],
+      "fis": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTargetResourceTypes"
+          ]
+        }
+      ],
+      "servicediscovery": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListNamespaces"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListServices"
+          ]
+        }
+      ],
+      "elbv2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeLoadBalancers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeTargetGroups"
+          ]
+        }
+      ],
+      "apprunner": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListObservabilityConfigurations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListAutoScalingConfigurations"
+          ]
+        }
+      ],
+      "sqs": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListQueues"
+          ]
+        }
+      ],
+      "codepipeline": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListWebhooks"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListPipelines"
+          ]
+        }
+      ],
+      "backup": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListBackupPlans"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListBackupVaults"
+          ]
+        }
+      ],
+      "codedeploy": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListApplications"
+          ]
+        }
+      ],
+      "rds": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBInstances"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusterSnapshots"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBSnapshots"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribePendingMaintenanceActions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusterParameterGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusterEndpoints"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBSubnetGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBClusters"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeDBParameterGroups"
+          ]
+        }
+      ],
+      "m2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListEngineVersions"
+          ]
+        }
+      ],
+      "amp": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListWorkspaces"
+          ]
+        }
+      ],
+      "firehose": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListDeliveryStreams"
+          ]
+        }
+      ],
+      "opensearch": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetCompatibleVersions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListVersions"
+          ]
+        }
+      ],
+      "gamelift": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListLocations"
+          ]
+        }
+      ],
+      "snowball": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListCompatibleImages"
+          ]
+        }
+      ],
+      "inspector2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListAccountPermissions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListUsageTotals"
+          ]
+        }
+      ],
+      "keyspaces": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListKeyspaces"
+          ]
+        }
+      ],
+      "ecr": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeRepositories"
+          ]
+        }
+      ],
+      "pinpoint-email": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListEmailIdentities"
+          ]
+        }
+      ],
+      "nimble": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListEulas"
+          ]
+        }
+      ],
+      "ecr-public": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeRegistries"
+          ]
+        }
+      ],
+      "ssm-incidents": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListResponsePlans"
+          ]
+        }
+      ],
+      "wellarchitected": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListLenses"
+          ]
+        }
+      ],
+      "signer": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListSigningJobs"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListConnections"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListApiDestinations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListRules"
+          ]
+        }
+      ],
+      "amplifybackend": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListS3Buckets"
+          ]
+        }
+      ],
+      "migrationhub-config": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeHomeRegionControls"
+          ]
+        }
+      ],
+      "s3": [
+        {
+          "operation": null,
+          "result_types": [
+            "ListBuckets"
+          ]
+        }
+      ],
+      "ses": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListVerifiedEmailAddresses"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListIdentities"
+          ]
+        }
+      ],
+      "stepfunctions": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListStateMachines"
+          ]
+        }
+      ],
+      "resource-groups": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListGroups"
+          ]
+        }
+      ],
+      "apigatewayv2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetDomainNames"
+          ]
+        }
+      ],
+      "cognito-idp": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListUserPools"
+          ]
+        }
+      ],
+      "route53": [
+        {
+          "operation": null,
+          "result_types": [
+            "ListHostedZonesByName"
+          ]
+        },
+        {
+          "operation": null,
+          "result_types": [
+            "ListHostedZones"
+          ]
+        }
+      ],
+      "mediaconnect": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListOfferings"
+          ]
+        }
+      ]
+    }
+  },
+  "errors": {
+    "errors": {
+      "kinesis": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeStreamSummary"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTagsForStream"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeStream"
+          ]
+        }
+      ],
+      "ecs": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTaskDefinitions"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTaskDefinitionFamilies"
+          ]
+        }
+      ],
+      "securityhub": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListOrganizationAdminAccounts"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListMembers"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetAdministratorAccount"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListInvitations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetMasterAccount"
+          ]
+        }
+      ],
+      "logs": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeQueries"
+          ]
+        }
+      ],
+      "migrationhub-config": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetHomeRegion"
+          ]
+        }
+      ],
+      "mgn": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListApplications"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListWaves"
+          ]
+        }
+      ],
+      "iottwinmaker": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetPricingPlan"
+          ]
+        }
+      ],
+      "config": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetCustomRulePolicy"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetComplianceDetailsByResource"
+          ]
+        }
+      ],
+      "personalize": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListMetricAttributionMetrics"
+          ]
+        }
+      ],
+      "migrationhubstrategy": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetLatestAssessmentId"
+          ]
+        }
+      ],
+      "ec2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetAwsNetworkPerformanceData"
+          ]
+        }
+      ],
+      "importexport": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListJobs"
+          ]
+        }
+      ],
+      "sagemaker": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListHubs"
+          ]
+        }
+      ],
+      "stepfunctions": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListExecutions"
+          ]
+        }
+      ],
+      "iotwireless": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetPositionEstimate"
+          ]
+        }
+      ],
+      "guardduty": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListOrganizationAdminAccounts"
+          ]
+        }
+      ],
+      "redshift-serverless": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListTableRestoreStatus"
+          ]
+        }
+      ],
+      "servicecatalog-appregistry": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetConfiguration"
+          ]
+        }
+      ]
+    }
+  },
+  "no_access": {
+    "no_access": {
+      "billingconductor": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListPricingPlans"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListAccountAssociations"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListBillingGroups"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListBillingGroupCostReports"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListPricingRules"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListCustomLineItems"
+          ]
+        }
+      ],
+      "ce": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListCostAllocationTags"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListCostCategoryDefinitions"
+          ]
+        }
+      ],
+      "license-manager": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListReceivedLicensesForOrganization"
+          ]
+        }
+      ],
+      "organizations": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListDelegatedAdministrators"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeResourcePolicy"
+          ]
+        }
+      ],
+      "macie2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListClassificationScopes"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListOrganizationAdminAccounts"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListSensitivityInspectionTemplates"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "GetAutomatedDiscoveryConfiguration"
+          ]
+        }
+      ],
+      "kinesisvideo": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeMediaStorageConfiguration"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeEdgeConfiguration"
+          ]
+        },
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "DescribeMappedResourceConfiguration"
+          ]
+        }
+      ],
+      "inspector2": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListDelegatedAdminAccounts"
+          ]
+        }
+      ],
+      "detective": [
+        {
+          "operation": "us-east-1",
+          "result_types": [
+            "ListOrganizationAdminAccounts"
+          ]
+        }
+      ]
+    }
+  }
+}
