@@ -5,6 +5,9 @@ from argparse import ArgumentParser
 from platform import python_version_tuple
 from sys import exit, stderr
 
+from botocore.loaders import Loader
+
+from aws_list_all.client import get_client
 from introspection import (
     get_listing_operations, get_services, get_verbs, introspect_regions_for_service, recreate_caches
 )
@@ -242,4 +245,6 @@ def main():
 
 
 if __name__ == '__main__':
+    client, session = get_client('ecs')
+    s = Loader().list_available_services('region-1')
     exit(main())
