@@ -78,7 +78,7 @@ DISALLOWED_FOR_IAM_USERS = {
 }
 # DEPRECATED_OR_DISALLOWED.update(DISALLOWED_FOR_IAM_USERS)
 
-# This lists API calls that do return a list of resource-like objects which cannot be influenced by the user
+# This lists API calls that do return a list of resource-like entities which cannot be influenced by the user
 AWS_RESOURCE_QUERIES = {
     'apigateway': ['GetSdkTypes'],
     'autoscaling': [
@@ -171,7 +171,7 @@ AWS_RESOURCE_QUERIES = {
     'xray': ['GetSamplingRules'],
 }
 
-# This lists API calls that do not return resources or resource-like objects.
+# This lists API calls that do not return resources or resource-like entities.
 #
 # It has become a bit mixed up with the AWS_RESOURCE_QUERIES list, yet the idea here is that these calls may
 # still be used later for change tracking, e.g. tracking account limits over time with DescribeAccountLimits.

@@ -386,7 +386,7 @@ def acquire_listing(verbose, what):
 
 
 def do_list_files(filenames, verbose=0):
-    """Print out a rudimentary summary of the Listing objects contained in the given files"""
+    """Print out a rudimentary summary of the Listing entities contained in the given files"""
     for listing_filename in filenames:
         listing = Listing.from_json(json.load(open(listing_filename, 'rb')))
         resources = listing.resources
